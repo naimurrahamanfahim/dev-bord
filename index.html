@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dev-Bord(fahim)</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+</head>
+<body class="px-5 py-6  bg-gray-200">
+  <!--navbar-->
+  <!--1st div-->
+  <nav class="flex justify-between  box-border  border-solid px-2 py-2 rounded-lg bg-base-200 shadow-xl shadow-gray-500/50  ">
+    <div class="flex item-center gap-2 px-2 py-2">
+      <div>  <img class="w-10 h-10" src="logo.png" alt=""> </div>
+        <div> <h1 class="font-bold text-xl"><span class="text-xl font-normal" >Dev</span>Board</h1></div>
+    </div>
+    <!--2nd div-->
+<div class="flex  item-center gap-4 py-2">
+ <div  class="flex  item-center gap-1  rounded-xl px-2 py-2 bg-gray-200 shadow-xl shadow-gray-500/50"><img  class="w-6 h-6 " src="checkbox.png" alt="">
+  <span id="navNumber" class="font-bold">23</span></div> 
+<div> <button  onclick="changeColor()"> <img    class="w-10 h-10 px-1 py-1  rounded-4xl bg-gray-200 shadow-xl shadow-gray-500/50" src="theme-btn.png" alt=""> </button></div> 
+</div>
+  </nav>
+
+  <!--task-bord-->
+  <section class="grid grid-cols-1 lg:grid-cols-5 pt-5 gap-4">
+    <div class="col-span-4 bg-white rounded-lg shadow-xl shadow-gray-500" >
+   <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4  gap-4 mt-6  px-4 py-4  shadow-gray-500">
+    <!-- div-1-->
+    <div class="flex  item-center gap-4 bg-gray-200 rounded-lg  px-8 py-4 shadow-gray-500">
+      
+     <div class="pt-3"> <button id="checkButton" class="px-2 py-2 rounded-4xl bg-white"><img src="checkbox.png" alt=""></button></div>
+     <div class="text-center pt-2">
+      <h1>Task Assiged </h1>
+      <span id="counter" class="font-bold">6</span>
+      
+     </div>
+     
+    </div>
+    <!-- div-2-->
+    <div class="flex item-center  bg-blue-400 rounded-lg text-center px-8 py-4 col-span-2 shadow-xl" >
+      <img src="board.png" alt="">
+      <h1 class="text-white">Discover Somthing New Today</h1>
+    </div>
+    <!-- div-3-->
+    <div class="flex   item-center gap-4 text- px-8 py-4 bg-gray-200 shadow-gray-500 rounded-lg">
+   <div > <img class="pt-4" src="calender.png" alt=""></div> 
+    <div class="pt-5" > <h1>Tue.Feb.2025</h1></div> 
+    </div>
+     
+  
+    
+  </section>
+  
+    <div class="grid grid-cols-1 gap-4 px-4 py-4 md:grid-cols-2 lg:grid-cols-3 ">
+     <!-- div-6items-->
+     
+      <!--div1-->
+      <div class=" px-4 py-4 bg-gray-200 rounded-lg shadow-lg shadow-gray-500">
+        <button  class="px-2 py-1 bg-white rounded-2xl  mb-2">Shop Ease</button>
+        <h1 class="text-xl font-bold">Fix Mobile Button Issue</h1>
+        <h1 class="px-2 py-2 text-gray bg-white rounded-lg mt-2 ">A card component has a figure,body part and inside body there are title and action parts</h1>
+        <div class="flex justify-between item-center gap-2">
+          <div><h1>Deadline</h1>
+          <h1>21/march/2025</h1>
+        </div>
+        <div class="pt-6"><button class="px-2 py-2 text-white rounded-lg bg-blue-700" >completed</button></div>
+        </div>
+      </div>
+  <!--div2-->
+  <div class=" px-4 py-4 bg-gray-200 rounded-lg shadow-lg shadow-gray-500">
+    <button class="px-2 py-1 bg-white rounded-2xl  mb-2" >CloudSync</button>
+    <h1 class="text-xl font-bold">Add Dark Mode</h1>
+    <h1 class="px-2 py-2 text-gray bg-white rounded-lg mt-2">Store the user's preference in localStorage, update CSS varia</h1>
+    <div class="flex justify-between item-center gap-2">
+      <div><h1>Deadline</h1>
+      <h1>21/march/2025</h1>
+    </div>
+    <div class="pt-6"><button class="px-2 py-2 text-white rounded-lg bg-blue-700" >completed</button></div>
+    </div>
+  </div>
+  <!--div3-->
+  <div class=" px-4 py-4 bg-gray-200 rounded-lg shadow-lg shadow-gray-500">
+    <button class="px-2 py-1 bg-white rounded-2xl  mb-2" >SwiftPay</button>
+    <h1 class="text-xl font-bold">Optimize  Home page </h1>
+    <h1 class="px-2 py-2 text-gray bg-white rounded-lg mt-2">Debug using Chrome DevTools, check for overlappin</h1>
+    <div class="flex justify-between item-center gap-2">
+      <div><h1>Deadline</h1>
+      <h1>21/march/2025</h1>
+    </div>
+    <div class="pt-6"><button class="px-2 py-2 text-white rounded-lg bg-blue-700" >completed</button></div>
+    </div>
+  </div>
+  <!--div4-->
+  <div class=" px-4 py-4 bg-gray-200 rounded-lg shadow-lg shadow-gray-500">
+    <button class="px-2 py-1 bg-white rounded-2xl  mb-2">Meta</button>
+    <h1 class="text-xl font-bold">Add new emoji 🤲</h1>
+    <h1 class="px-2 py-2 text-gray bg-white rounded-lg mt-2">A card component has a figure,body part and inside body there are title and action parts</h1>
+    <div class="flex justify-between item-center gap-2">
+      <div><h1>Deadline</h1>
+      <h1>21/march/2025</h1>
+    </div>
+    <div class="pt-6"><button class="px-2 py-2 text-white rounded-lg bg-blue-700" >completed</button></div>
+    </div>
+  </div>
+  <!--div5-->
+  <div class=" px-4 py-4 bg-gray-200 rounded-lg shadow-lg shadow-gray-500">
+    <button class="px-2 py-1 bg-white rounded-2xl  mb-2">Google LLC</button>
+    <h1 class="text-xl font-bold">Integrate OpenAI API </h1>
+    <h1 class="px-2 py-2 text-gray bg-white rounded-lg mt-2">A card component has a figure,body part and inside body there are title and action parts</h1>
+    <div class="flex justify-between item-center gap-2">
+      <div><h1>Deadline</h1>
+      <h1>21/march/2025</h1>
+    </div>
+    <div class="pt-6"><button class="px-2 py-2 text-white rounded-lg bg-blue-700" >completed</button></div>
+    </div>
+  </div>
+  <!--div6-->
+  <div class=" px-4 py-4 bg-gray-200 rounded-lg shadow-lg shadow-gray-500">
+    <button class="px-2 py-1 bg-white rounded-2xl  mb-2">Glassdoar</button>
+    <h1 class="text-xl font-bold">Improve Job searching</h1>
+    <h1 class="px-2 py-2 text-gray bg-white rounded-lg mt-2">Debug using Chrome DevTools, check for overlappin</h1>
+    <div class="flex justify-between item-center gap-2">
+      <div><h1>Deadline</h1>
+      <h1>21/march/2025</h1>
+    </div>
+    <div class="pt-6"><button class="px-2 py-2 text-white rounded-lg bg-blue-700" >completed</button></div>
+    </div>
+  </div>
+  </div>
+  </div>
+  
+  
+  
+    
+
+  <!--sec2-->
+  <div  class="bg-white rounded-lg shadow-lg shadow-gray-500  ">
+    <div  class="flex gap-2 item-center pl-14 pt-10 ">
+   <div> <img src="activity.png" alt="" srcset=""> </div>
+   <div><h1>Activity Log</h1></div>
+    </div>
+    <button   class="text-white px-2 py-2 mt-2 mb-6 bg-blue-700 ml-16 rounded-lg">Clear History</button>
+     <div id="history" class="pl-16 pd-5 mb-10">
+      <h3 class="font-bold">History Log:</h3>
+      <ul id="historyList"></ul>
+
+     </div>
+  </div>
+    
+   
+
+
+
+
+ </section>
+ <script src="script/function.js"></script>
+ <script src="script/task.js"></script>
+ 
+</body>
+</html>
